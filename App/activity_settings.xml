@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="@color/text_primary_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/settings"
+                android:textSize="24sp"
+                android:textColor="@color/text_primary_dark"
+                android:fontFamily="sans-serif-black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_language"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary_dark"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/languageRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="@color/text_primary_dark"
+                android:padding="12dp"
+                android:buttonTint="@color/primary" />
+
+            <RadioButton
+                android:id="@+id/radioTamil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="தமிழ் (Tamil)"
+                android:textColor="@color/text_primary_dark"
+                android:padding="12dp"
+                android:buttonTint="@color/primary" />
+
+            <RadioButton
+                android:id="@+id/radioHindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="हिन्दी (Hindi)"
+                android:textColor="@color/text_primary_dark"
+                android:padding="12dp"
+                android:buttonTint="@color/primary" />
+
+            <RadioButton
+                android:id="@+id/radioKannada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ಕನ್ನಡ (Kannada)"
+                android:textColor="@color/text_primary_dark"
+                android:padding="12dp"
+                android:buttonTint="@color/primary" />
+
+            <RadioButton
+                android:id="@+id/radioTelugu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="తెలుగు (Telugu)"
+                android:textColor="@color/text_primary_dark"
+                android:padding="12dp"
+                android:buttonTint="@color/primary" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/save"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            app:cornerRadius="12dp"
+            android:layout_marginTop="32dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewSavedBiometrics"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:text="( Saved Biometric ) 🧬"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/background_dark"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="2dp"
+            android:textColor="@color/primary"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddBiometric"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_biometric_button"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/background_dark"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="2dp"
+            android:textColor="@color/primary"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
