@@ -25,10 +25,25 @@ A native Kotlin application designed for field use.
 *   **Multi-language**: Localized support for English, Hindi, and Kannada.
 *   **UI/UX**: Material Design 3 interface with dark mode.
 
-### 2. Muzzle Biometrics System
-Individual identification through biometric "fingerprints" of cattle muzzles.
-*   **Uniqueness**: Muzzle ridge patterns are unique to each animal, similar to human fingerprints.
-*   **Biometric Vault**: Securely store and match individual cattle identities.
+
+### 2. Muzzle Biometric System (Individual Identification)
+The project includes a dedicated muzzle biometric module for individual cattle identification using deep learning:
+
+* **Uniqueness**: Muzzle ridge patterns are unique to each animal, similar to human fingerprints.
+* **Biometric Vault**: Securely store and match individual cattle identities.
+* **Model Training**: Two training scripts are provided:
+	- `muzzle_biometrics/train_model.py` (TensorFlow/Keras)
+	- `muzzle_biometrics/train_model_pytorch.py` (PyTorch)
+* **How it works**:
+	- The muzzle region is detected and preprocessed from cattle images.
+	- Deep learning models are trained to extract and match biometric features.
+	- Models can be exported to TFLite for mobile deployment.
+* **Usage**:
+	- Prepare your muzzle image dataset in the required folder structure.
+	- Edit the config paths in the training scripts as needed.
+	- Run the scripts to train and export your own biometric model.
+
+See the `muzzle_biometrics/` folder for code, logs, and sample outputs.
 
 ### 3. Web Dashboard & Analytics
 A central hub for managing herd data and visualizing performance.
